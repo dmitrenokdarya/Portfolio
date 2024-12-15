@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Header } from './layout/header/Header';
 import { Main } from './layout/sections/main/Main';
 import { AboutMe } from './layout/sections/aboutMe/AboutMe';
-import GeneralImage from './assets/images/author.png'
+import GeneralImage from './assets/images/photo.webp';
 import { LastWorks } from './layout/sections/main/lastWorks/LastWorks';
 import { Quote } from './layout/sections/quote/Quote';
 import { AwardsAndRecognition } from './layout/sections/awardsAndRecognition/AwardsAndRecognition';
@@ -34,7 +34,8 @@ export default App;
 
 const General = styled.div`
     min-height: 100vh;
-    background-color: #0000ff4c;
     margin-bottom: 178px;
-    background-image: url({GeneralImage});
+    background-image: url(${GeneralImage});
+    background-repeat: no-repeat;
+    background-size: 100%;
 `
