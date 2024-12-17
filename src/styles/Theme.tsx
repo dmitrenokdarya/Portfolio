@@ -2,6 +2,7 @@ export const Theme = {
     colors:{
         primaryBg: '#FFFFFF',
         secondaryBg: {
+            titleBorder: '#F8F8F8',
             quoteBlack: '#0D0D0D',
             bottomFooterBlack: '#1A1A1A',
             buttonsBlack: '#181818'
@@ -11,6 +12,7 @@ export const Theme = {
             paragraph: '#555555',
             littleText: '#2F2F2F',
             white: '#FFFFFF',
+            activeMainButton: '#151515',
             bigQuote: '#EAEAEA',
             littleQuote: '#999999',
             littleAwards: '#282828',

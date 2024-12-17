@@ -33,9 +33,11 @@ function App() {
 export default App;
 
 const General = styled.div`
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw;
     margin-bottom: 178px;
     background-image: url(${GeneralImage});
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 `

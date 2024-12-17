@@ -10,7 +10,9 @@ export const Header = () => {
         <StyledHeader>
             <FlexWrapper justify="space-between" align="center">
                 <Logo/>
-                <Icon iconId="burger-menu" width="32" heigth="21" viewBox="0 0 32 21"/>
+                <SizeBoxIcon>
+                    <Icon iconId="burger-menu" width="32" heigth="21" viewBox="0 0 32 21"/>
+                </SizeBoxIcon>
             </FlexWrapper>
         </StyledHeader>
     );
@@ -18,5 +20,11 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-    padding: 63px 80px 130px 100px;
+    padding: 7vh 4.2vw 14vh 5.2vw;
+`
+
+const SizeBoxIcon = styled.div`
+    &:hover{
+        cursor: pointer;
+    }
 `
