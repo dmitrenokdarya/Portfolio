@@ -10,9 +10,9 @@ export const Main = () => {
                 <Greetings>hi! everyone</Greetings>
                 <MainText>
                     <H2Styled>Chris Lee</H2Styled>
-                    <H2Styled as='h1'>Brand designer</H2Styled>
+                    <H2Styled as='h1'>Brand Designer</H2Styled>
                 </MainText>
-                <MainDescription>Make designs mainly logos, visual identities, apps & websites,<br/>social media and magazines.</MainDescription>
+                <MainDescription>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</MainDescription>
                 <GetInTouch href="#">get in touch</GetInTouch>
             </FlexWrapper>
         </StyledMain>
@@ -20,8 +20,8 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    max-height: 65.6vh;
-    margin-left: 26vw;
+    min-height: 100vh;
+    margin: 0 663px 0 501px;
     color: ${Theme.colors.font.white};
 `
 const Greetings = styled.span`

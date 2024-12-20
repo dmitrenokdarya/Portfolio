@@ -1,10 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    max-width: 1300px;
-    width: 100%;
+    min-width: 1280px;
     min-height: 100%;
-    padding: 0px 15px 0px 15px;
-    margin: 0px auto;
+    margin: 0px 320px;
     border: 1px solid red;
 `

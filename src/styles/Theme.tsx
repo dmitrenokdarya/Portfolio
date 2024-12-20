@@ -5,12 +5,15 @@ export const Theme = {
             titleBorder: '#F8F8F8',
             quoteBlack: '#0D0D0D',
             bottomFooterBlack: '#1A1A1A',
-            buttonsBlack: '#181818'
+            buttonsBlack: '#181818',
+            skillsLine: '#DBDBDB',
+            bigSkillLine: '#3A3422'
         },
         font: {
             title: '#111111',
             paragraph: '#555555',
             littleText: '#2F2F2F',
+            lineAwards: '#e2e2e2',
             white: '#FFFFFF',
             activeMainButton: '#151515',
             bigQuote: '#EAEAEA',
