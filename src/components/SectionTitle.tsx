@@ -9,7 +9,8 @@ export const SectionTitle = styled.h2`
     font-family: "Inconsolata";
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0.24em;
+    letter-spacing: 0.1em;
+    line-height: 126%;
     font-size: 22px;
     border: 0.09em solid ${Theme.colors.secondaryBg.titleBorder};
     position: absolute;

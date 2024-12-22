@@ -34,18 +34,16 @@ export const New = (props: NewPropsType) => {
 const StyledNew = styled.a<StyledNewPropsType>`
     min-height: 477px;
     min-width: 396px;
-    background-image: url(${props => props.cardImg});
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 100%), url(${props => props.cardImg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: end;
-
-
-    background: linear-gradient(white, black);//отдельным слоем наверх и добавить прозрачность
+    color: ${Theme.colors.font.littleCard};
 
     &:hover{
-        background-color: #00000067;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${props => props.cardImg});
     }
 `
 
@@ -55,6 +53,8 @@ const NameOfNew = styled.div`
 
 const SectionAndTime = styled.div`
     margin-bottom: 16px;
+    display: flex;
+    gap: 12px;
 `
 
 const NewsSection = styled.span`

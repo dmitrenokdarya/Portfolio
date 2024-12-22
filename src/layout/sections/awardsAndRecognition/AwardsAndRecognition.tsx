@@ -44,6 +44,9 @@ const ZText = styled.span`
     font-weight: 300;
     text-transform: uppercase;
     font-size: 120px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    text-align: center;
     color: ${Theme.colors.secondaryBg.titleBorder};
     z-index: 1;
 `

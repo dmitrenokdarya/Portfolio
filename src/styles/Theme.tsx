@@ -7,7 +7,8 @@ export const Theme = {
             bottomFooterBlack: '#1A1A1A',
             buttonsBlack: '#181818',
             skillsLine: '#DBDBDB',
-            bigSkillLine: '#3A3422'
+            bigSkillLine: '#3A3422',
+            testimonials: '#333333',
         },
         font: {
             title: '#111111',
@@ -30,7 +31,8 @@ export const Theme = {
             topFooterPassiveMenu: '#8F8F8F',
             topFooterActiveMenu: '#3F3F3F',
             topFooterEmail: '#2F2F2F',
-            buttomFooterText: '#8C8C8C'
+            buttomFooterText: '#8C8C8C',
+            placeholder: '#F4F4F4'
         }
     }
 }

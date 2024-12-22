@@ -8,6 +8,7 @@ import { Container } from "../../../components/Container";
 import Shoper from "../../../assets/images/shoper.webp";
 import Package from "../../../assets/images/package.webp";
 import Camera from "../../../assets/images/camera.png";
+import { Icon } from "../../../components/icon/Icon"; 
 
 export const LatestNews = () => {
     return (
@@ -22,7 +23,7 @@ export const LatestNews = () => {
                     <New cardImg={Package} section="Graphic Design" date="July 1, 2021" caption="basic typography rules for ui designing"/>
                     <New cardImg={Camera} section="Graphic Design" date="July 1, 2021" caption="top 10 graphic designs review in 2021"/>
                 </FlexWrapper>
-                <a href="">view all blogs</a>
+                <StyledButton href="">view all blogs <Icon iconId="buttonStrelBlack" width="16" heigth="13" viewBox="0 0 10 9"/></StyledButton>
             </StyledLatestNews>
         </Container>
     );
@@ -47,6 +48,22 @@ const ZText = styled.span`
     font-weight: 300;
     text-transform: uppercase;
     font-size: 120px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    text-align: center;
     color: ${Theme.colors.secondaryBg.titleBorder};
     z-index: 1;
+`
+
+const StyledButton = styled.a`
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 235%;
+    text-align: center;
+    color: ${Theme.colors.font.title};
+    background-color: transparent;
+    letter-spacing: 0.10em;
+    padding: 11px 38px;
+    margin-top: 62px;
 `

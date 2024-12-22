@@ -1,24 +1,28 @@
 import React from "react";
 import styled from "styled-components";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { Logo } from "../../../components/logo/Logo";
 import { Subscribe } from "./blocks/Subscribe";
 import { Menu } from "../../../components/menu/Menu";
 import { Email } from "./blocks/Email";
 import { SocialIcons } from "./blocks/SocialIcons";
+import { Theme } from "../../../styles/Theme";
+import { Icon } from "../../../components/icon/Icon";
+import { Container } from "../../../components/Container";
 
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <Logo/>
-            <FooterTop>
-                <Subscribe/>
-                <StyledMenu>
-                    <Menu/> 
-                </StyledMenu>
-                <Email/>               
-            </FooterTop>
+            <Container>
+                <Icon iconId={"logoBlack"} width={'94'} heigth={'45'} viewBox={'0 0 94 45'}/>
+                <FooterTop>
+                    <Subscribe/>
+                    <StyledMenu>
+                        <Menu/> 
+                    </StyledMenu>
+                    <Email/>               
+                </FooterTop>
+            </Container>
             <FooterBottom>
                 <SocialIcons/>
                 <p>Template designed by : Templates Jungle</p>
@@ -29,22 +33,22 @@ export const Footer = () => {
 
 const StyledFooter = styled.section`
     min-height: 584px;
-    background-color: #eb348f6c;
 `
 
 const StyledMenu = styled.div`
-    width: 33%;
+    margin-right: 108px;
 `
 
 const FooterTop = styled.div`
     min-height: 334px;
-    margin-bottom: 100px;
+    margin: 34px 0px 100px 0px;
     display: flex;
+    justify-content: space-between;
 `
 
 const FooterBottom = styled.div`
     display: flex;
     min-height: 150px;
-    background-color: #1A1A1A;
+    background-color: ${Theme.colors.secondaryBg.bottomFooterBlack};
     color: #8C8C8C;
 `
