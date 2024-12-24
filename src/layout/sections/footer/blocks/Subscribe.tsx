@@ -35,9 +35,10 @@ const Input = styled.input`
     background-color: ${Theme.colors.font.placeholder};
     height: 50px;
     border: none;
+    padding-left: 22px;
 
     &::placeholder{
-        font-family: 'Manrope';
+        font-family: "Manrope";
         font-weight: 400;
         font-size: 17px;
         letter-spacing: 0.02em;
@@ -47,9 +48,10 @@ const Input = styled.input`
 `
 
 const StyledButton = styled.button`
+    font-family: "Manrope";
     text-transform: uppercase;
     font-size: 17px;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
     color: ${Theme.colors.font.white};
     background-color: ${Theme.colors.secondaryBg.buttonsBlack};

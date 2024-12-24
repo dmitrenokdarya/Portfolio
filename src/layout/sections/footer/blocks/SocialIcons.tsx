@@ -6,16 +6,18 @@ import { Icon } from "../../../../components/icon/Icon";
 export const SocialIcons = () => {
     return (
         <StyledSocialIcons>
-            <Icon iconId="facebook"/>
-            <Icon iconId="twiter"/>
-            <Icon iconId="linkid"/>
-            <Icon iconId="shar"/>
-            <Icon iconId="youtube"/>
+            <a><Icon iconId="facebook"/></a>
+            <a><Icon iconId="twiter"/></a>
+            <a><Icon iconId="linkid"/></a>
+            <a><Icon iconId="shar"/></a>
+            <a><Icon iconId="youtube"/></a>
         </StyledSocialIcons>
     );
 };
 
 
 const StyledSocialIcons = styled.div`
-
+    display: flex;
+    gap: 66px;
+    margin: auto 0px auto 322px;
 `

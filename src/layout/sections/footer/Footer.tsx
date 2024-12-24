@@ -25,7 +25,7 @@ export const Footer = () => {
             </Container>
             <FooterBottom>
                 <SocialIcons/>
-                <p>Template designed by : Templates Jungle</p>
+                <StyledP>Template designed by : Templates Jungle</StyledP>
             </FooterBottom>
         </StyledFooter>
     );
@@ -48,7 +48,12 @@ const FooterTop = styled.div`
 
 const FooterBottom = styled.div`
     display: flex;
+    justify-content: space-between;
     min-height: 150px;
     background-color: ${Theme.colors.secondaryBg.bottomFooterBlack};
     color: #8C8C8C;
+`
+
+const StyledP = styled.p`
+    margin: auto 322px auto 0px;
 `
