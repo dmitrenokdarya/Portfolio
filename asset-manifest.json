@@ -1,22 +1,26 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.31d6cfe0.css",
-    "main.js": "/Portfolio/static/js/main.59f0d796.js",
+    "main.js": "/Portfolio/static/js/main.14da9394.js",
     "static/js/787.25eaef86.chunk.js": "/Portfolio/static/js/787.25eaef86.chunk.js",
+    "static/media/smoke.webp": "/Portfolio/static/media/smoke.73a6e34ebf2203190ea3.webp",
     "static/media/photo.webp": "/Portfolio/static/media/photo.30992e47fc691b1ff6a3.webp",
+    "static/media/shoper.webp": "/Portfolio/static/media/shoper.67c039fd0f25bb8deb45.webp",
     "static/media/magazinegirl.webp": "/Portfolio/static/media/magazinegirl.885e4ff6bd63a343af73.webp",
     "static/media/perfume.webp": "/Portfolio/static/media/perfume.f5e9d66675a4fcf226b2.webp",
+    "static/media/package.webp": "/Portfolio/static/media/package.277b1372f0118afd2ddb.webp",
     "static/media/mockup.webp": "/Portfolio/static/media/mockup.10d453c625e6422c3f95.webp",
     "static/media/magazine.png": "/Portfolio/static/media/magazine.7b780c80cf49496aed54.png",
     "static/media/makeup.webp": "/Portfolio/static/media/makeup.cd6327fc491a61aa3d9f.webp",
     "static/media/coffee.png": "/Portfolio/static/media/coffee.73a045f6c29286077ad5.png",
-    "static/media/image-sprite.svg": "/Portfolio/static/media/image-sprite.d9381071a49ff7490afe21c421eeb11c.svg",
+    "static/media/camera.png": "/Portfolio/static/media/camera.bf3b7ac1283fc28a2334.png",
+    "static/media/image-sprite.svg": "/Portfolio/static/media/image-sprite.b98146e1723a1e4f75497cfaeb462d21.svg",
     "index.html": "/Portfolio/index.html",
-    "main.59f0d796.js.map": "/Portfolio/static/js/main.59f0d796.js.map",
+    "main.14da9394.js.map": "/Portfolio/static/js/main.14da9394.js.map",
     "787.25eaef86.chunk.js.map": "/Portfolio/static/js/787.25eaef86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.59f0d796.js"
+    "static/js/main.14da9394.js"
   ]
 }
