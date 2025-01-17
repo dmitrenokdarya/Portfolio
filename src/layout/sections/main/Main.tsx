@@ -20,9 +20,13 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    min-height: 100vh;
-    margin: 0 663px 0 501px;
+    max-height: 100vh;
+    margin: 0 33vw 0 26vw;
     color: ${Theme.colors.font.white};
+    
+    @media ${Theme.media.lgTablet} {
+        margin: 0 10vw 0 10vw;
+    }
 `
 const Greetings = styled.span`
     text-transform: uppercase;
@@ -33,7 +37,7 @@ const Greetings = styled.span`
     font-weight: 400;
     font-style: normal;
     letter-spacing: 0.24em;
-    font-size: 18px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (18 - 10.5) + 10.5px);
     margin-bottom: 5vh;
 `
 
@@ -43,20 +47,20 @@ const MainText = styled.div`
 
 const H2Styled = styled.h2`
     font-weight: 800;
-    font-size: 108px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (108 - 63.2) + 63.2px);
     letter-spacing: -0.04em;
 `
 const MainDescription = styled.p`
     margin: 4vh 0 7.4vh 0;
     font-weight: 400;
-    font-size: 24px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (24 - 14) + 14px);
     letter-spacing: 0.02em;
     line-height: 1.98;
 `
 
 const GetInTouch = styled.a`
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (19 - 11.2) + 11.2px);
     font-weight: 600;
     color: ${Theme.colors.font.white};
     border: 0.053em solid ${Theme.colors.font.white};

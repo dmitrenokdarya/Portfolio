@@ -10,6 +10,7 @@ import { AwardsAndRecognition } from './layout/sections/awardsAndRecognition/Awa
 import { LatestNews } from './layout/sections/latestNews/LatestNews';
 import { Testimonials } from './layout/sections/testimonials/Testimonials';
 import { Footer } from './layout/sections/footer/Footer';
+import { Theme } from './styles/Theme';
 
 
 function App() {
@@ -34,10 +35,26 @@ export default App;
 
 const General = styled.div`
     height: 100vh;
-    width: 100vw;
+    max-width: 100%;
     margin-bottom: 178px;
     background-image: url(${GeneralImage});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
+    @media ${Theme.media.screen}{
+        background-position-x: 80%;
+    }
+
+    @media ${Theme.media.lgTablet}{
+        background-position-x: 65%;
+    }
+    
+    @media ${Theme.media.tablet}{
+        background-position-x: 75%;
+    }
+
+    @media ${Theme.media.mobile}{
+        background-position-x: 70%;
+    }
 `

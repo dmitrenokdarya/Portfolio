@@ -20,7 +20,7 @@ export const Slider = (props: SliderPropsType) => {
                             <Pagination type="strel_1"/>
                             <FlexWrapper direction="column" align="center">
                                 <ReviewText>{props.review}</ReviewText>
-                                <ImgOfClient src={props.imgsrc} alt="" />
+                                <ImgOfClient src={props.imgsrc} alt="client" />
                                 <ClientText>{props.client}</ClientText>
                                 <MiniSpan>{props.post}</MiniSpan>
                             </FlexWrapper>
