@@ -38,20 +38,20 @@ const StyledWork = styled.div<StyledWorkPropsType>`
 
 
 const ImageWork = styled.img<ImageWorkPropsType>`
-    width: ${props => props.widthImg};
-    margin-bottom: 18px;
+    max-width: ${props => props.widthImg};
+    margin-bottom: 1.985%;
 `
 
 const Description = styled.a`
     font-weight: 400;
-    font-size: 26px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (26 - 15.17) + 15.17px);
     line-height: 104%;
     text-transform: lowercase;
     text-align: right;
     color: ${Theme.colors.font.littleText};
-    margin-bottom: 8px;
+    margin-bottom: 0.31em;
 `
 
 const StyledHr = styled.hr`
-    border: 2px solid ${Theme.colors.font.littleText};
+    border: 0.115em solid ${Theme.colors.font.littleText};
 `

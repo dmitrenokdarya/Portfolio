@@ -21,7 +21,7 @@ export const AboutMe = () => {
                         <AboutMeText>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus accusan. maiores alias consequatur aut equatur aut perferendi.</AboutMeText>
                         <Button text="about me"/>
                     </TextButtonBlock>
-                    <FlexWrapper direction="column" align="start">
+                    <FlexBlockWrapper>
                         <StyledUl>
                             <Skill skill='photoshop' percentage='75%'/>
                             <Skill skill='illustrator' percentage='87%'/>
@@ -29,7 +29,7 @@ export const AboutMe = () => {
                             <Skill skill='after effect' percentage='78%'/>
                             <Skill skill='indesign' percentage='87%'/>
                         </StyledUl>
-                    </FlexWrapper>
+                    </FlexBlockWrapper>
                 </FlexBlock>
             </StyledAboutMe>
         </Container>
@@ -38,19 +38,19 @@ export const AboutMe = () => {
 
 const TitleBlock = styled.div`
     font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
-    margin-bottom: 2.21%;
+    margin-bottom: 2.21vh;
     width: 3.017em;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @media ${Theme.media.tablet}{
-        margin: auto;
+        margin: 3vh auto;
     }
 `
 
 const StyledAboutMe = styled.section`
-    margin-bottom: 13.01%;
+    margin-bottom: 13.01vh;
     background-color: ${Theme.colors.primaryBg};
     z-index: 0;
 `
@@ -100,6 +100,8 @@ const TextButtonBlock = styled.div`
         margin-right: none;
         margin-bottom: 3.53em;
     }
+`
+const FlexBlockWrapper = styled.div`
 `
 
 const StyledUl = styled.ul`

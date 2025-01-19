@@ -42,6 +42,9 @@ const StyledSkill = styled.div`
 
     @media ${Theme.media.tablet}{
         margin-bottom: 2em;
+        display: flex;
+        flex-direction: column;
+        width: auto;
     }
 `
 

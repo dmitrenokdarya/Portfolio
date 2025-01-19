@@ -14,7 +14,7 @@ export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <Icon iconId={"logoBlack"} width={'94'} heigth={'45'} viewBox={'0 0 94 45'}/>
+                <Icon iconId={"logoBlack"} width={'calc( (100vw - 576px)/(1920 - 576) * (94 - 54.83) + 54.83px)'} heigth={'45'} viewBox={'0 0 94 45'}/>
                 <FooterTop>
                     <Subscribe/>
                     <StyledMenu>
@@ -32,28 +32,51 @@ export const Footer = () => {
 };
 
 const StyledFooter = styled.section`
-    min-height: 584px;
+    height: 64.38vh;
 `
 
 const StyledMenu = styled.div`
-    margin-right: 108px;
+    margin-right: 5.625vw;
+
+    @media ${Theme.media.tablet}{
+        margin-right: 0;
+    }
 `
 
 const FooterTop = styled.div`
-    min-height: 334px;
-    margin: 34px 0px 100px 0px;
+    height: 36.825vh;
+    margin: 1.5vh 0px 11.025vh 0px;
     display: flex;
     justify-content: space-between;
+
+    @media ${Theme.media.tablet}{
+        flex-direction: column;
+        height: auto;
+        margin: 1.5vh 0px 8vh 0px;
+    }
 `
 
 const FooterBottom = styled.div`
     display: flex;
     justify-content: space-between;
-    min-height: 150px;
+    height: 16.538vh;
     background-color: ${Theme.colors.secondaryBg.bottomFooterBlack};
     color: #8C8C8C;
+
+    @media ${Theme.media.tablet}{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 10vh;
+        gap: 1vh;
+    }
 `
 
 const StyledP = styled.p`
-    margin: auto 322px auto 0px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (17 - 9.917) + 9.917px);
+    margin: auto 16.77vw auto 0px;
+
+    @media ${Theme.media.tablet}{
+        margin: 0;
+    }
 `

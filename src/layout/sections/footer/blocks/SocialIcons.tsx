@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { Icon } from "../../../../components/icon/Icon";
+import { Theme } from "../../../../styles/Theme";
 
 
 export const SocialIcons = () => {
     return (
         <StyledSocialIcons>
-            <a><Icon iconId="facebook"/></a>
-            <a><Icon iconId="twiter"/></a>
-            <a><Icon iconId="linkid"/></a>
-            <a><Icon iconId="shar"/></a>
-            <a><Icon iconId="youtube"/></a>
+            <a><Icon iconId="facebook" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)" /></a>
+            <a><Icon iconId="twiter" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
+            <a><Icon iconId="linkid" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
+            <a><Icon iconId="shar" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
+            <a><Icon iconId="youtube" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
         </StyledSocialIcons>
     );
 };
@@ -18,6 +19,10 @@ export const SocialIcons = () => {
 
 const StyledSocialIcons = styled.div`
     display: flex;
-    gap: 66px;
-    margin: auto 0px auto 322px;
+    gap: 3.4375vw;
+    margin: auto 0px auto 16.77vw;
+
+    @media ${Theme.media.tablet}{
+        margin: 0;
+    }
 `

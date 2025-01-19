@@ -23,19 +23,19 @@ export const LastWorks = () => {
                         <ZText>portfolio</ZText>
                         <SectionTitle>Latest works</SectionTitle>
                     </TitleBlock>
-                    <FlexWrapper direction="row" gap="62px">
+                    <FlexBlockWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="62px" imgsrc={MagazineGirl} width="617px" text='magazine front design'/>
-                            <Work marginBottom="62px" imgsrc={Bottle} width="617px" text='product bottle design'/>
-                            <Work imgsrc={Magazine} width="617px" text='magazine & brochure mockup'/>
+                            <Work marginBottom="6.84vh" imgsrc={MagazineGirl} width="100%" text='magazine front design'/>
+                            <Work marginBottom="6.84vh" imgsrc={Bottle} width="100%" text='product bottle design'/>
+                            <Work imgsrc={Magazine} width="100%" text='magazine & brochure mockup'/>
                         </FlexWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="62px" imgsrc={Coffee} width="601px" text='coffee bottle mockup'/>
-                            <Work marginBottom="62px" imgsrc={Mockup} width="601px" text='product tag mockup'/>
-                            <Work marginBottom="148px" imgsrc={Perfume} width="601px" text='perfume brand identity'/>
-                            <Button text="view all portfolio"/>
+                            <Work marginBottom="6.84vh" imgsrc={Coffee} width="100%" text='coffee bottle mockup'/>
+                            <Work marginBottom="6.84vh" imgsrc={Mockup} width="100%" text='product tag mockup'/>
+                            <Work marginBottom="16.32vh" imgsrc={Perfume} width="100%" text='perfume brand identity'/>
+                            <Button text="view all portfolio" padding="0.65em 2.12em" width="17.18em"/>
                         </FlexWrapper>
-                    </FlexWrapper>
+                    </FlexBlockWrapper>
                 </StyledLastWorks>
             </FlexWrapper>
         </Container>
@@ -44,22 +44,43 @@ export const LastWorks = () => {
 
 const StyledLastWorks = styled.section`
     background-color: ${Theme.colors.primaryBg};
-    min-height: 2482px;
-    margin-bottom: 343px;
+    margin-bottom: 38.04vh;
+
+    @media ${Theme.media.tablet}{
+        margin-bottom: 13.01vh;
+    }
 `
 
 const TitleBlock = styled.div`
-    margin-bottom: 36px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
+    margin: 0 auto;
+    margin-bottom: 3.97vh;
+    width: 3.017em;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media ${Theme.media.tablet}{
+        margin: 3vh auto;
+    }
 `
+
+const FlexBlockWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 3.125vw;
+
+    @media ${Theme.media.tablet}{
+        flex-direction: column;
+        gap: 6.84vh;
+    }
+`
+
 
 const ZText = styled.span`
     font-family: 'Jost';
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 120px;
     line-height: 150%;
     letter-spacing: -0.04em;
     text-align: center;

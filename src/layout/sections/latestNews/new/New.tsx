@@ -32,8 +32,8 @@ export const New = (props: NewPropsType) => {
 };
 
 const StyledNew = styled.a<StyledNewPropsType>`
-    min-height: 477px;
-    min-width: 396px;
+    height: 52.6vh;
+    width: 100%;
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4) 0%, transparent 100%), url(${props => props.cardImg});
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,21 +45,25 @@ const StyledNew = styled.a<StyledNewPropsType>`
     &:hover{
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${props => props.cardImg});
     }
+
+    @media ${Theme.media.lgTablet}{
+        height: 40vh;
+    }
 `
 
 const NameOfNew = styled.div`
-    margin: 0 48px 41px 49px;
+    margin: 0 2.5vw 4.52vh 2.5vw;
 `
 
 const SectionAndTime = styled.div`
-    margin-bottom: 16px;
+    margin-bottom: 1.764vh;
     display: flex;
-    gap: 12px;
+    gap: 0.625vw;
 `
 
 const NewsSection = styled.span`
     font-weight: 700;
-    font-size: 16px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (16 - 9.3) + 9.3px);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: ${Theme.colors.font.littleCard};
@@ -67,7 +71,7 @@ const NewsSection = styled.span`
 
 const NewsTime = styled.span`
     font-weight: 500;
-    font-size: 16px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (16 - 9.3) + 9.3px);
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: ${Theme.colors.font.littleCard};
@@ -75,7 +79,7 @@ const NewsTime = styled.span`
 
 const NewsTitle = styled.h3`
     font-weight: 700;
-    font-size: 26px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (26 - 15.167) + 15.167px);
     line-height: 160%;
     letter-spacing: 0.01em;
     text-transform: capitalize;

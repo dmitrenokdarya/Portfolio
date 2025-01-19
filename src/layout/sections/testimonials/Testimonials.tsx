@@ -28,33 +28,36 @@ export const Testimonials = () => {
 };
 
 const StyledTestimonials = styled.section`
-    min-height: 838px;
     background-image: url(${TestimonialsImg});
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 160px;
+    margin-bottom: 17.64vh;
 `
 const BlackFont = styled.div`
     z-index: -100;
     position: relative;
-    height: 838px;
     background-color: ${Theme.colors.font.activeSlider.strokeActiveSlider};
 `
 
 const TitleBlock = styled.div`
-    margin-bottom: 55px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
+    margin: 0 auto;
+    margin-bottom: 6.06vh;
+    width: 3.017em;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 111px 0px 56px 0px;
+
+    @media ${Theme.media.tablet}{
+        margin: 3vh auto;
+    }
 `
 
 const ZText = styled.span`
     font-family: 'Jost';
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 120px;
     line-height: 150%;
     letter-spacing: -0.04em;
     text-align: center;
@@ -73,7 +76,7 @@ const Title = styled.h2`
     font-style: normal;
     letter-spacing: 0.1em;
     line-height: 126%;
-    font-size: 22px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (22 - 12.83) + 12.83px);
     border: 0.09em solid ${Theme.colors.secondaryBg.testimonials};
     position: absolute;
     z-index: 100;

@@ -14,7 +14,7 @@ export const AwardsAndRecognition = () => {
                     <ZText>achievement</ZText>
                     <SectionTitle>awards and recognition</SectionTitle>
                 </TitleBlock>
-                    <FlexWrapper gap="61px" wrap="wrap" justify="space-between">
+                    <FlexWrapper gap="3.177vw" wrap="wrap" justify="center">
                         <Award title='Interior design' text='Breakthrough designer of the year 2020'/>
                         <Award title='Interior design' text='Breakthrough designer of the year 2020'/>
                         <Award title='Interior design' text='Breakthrough designer of the year 2020'/>
@@ -28,22 +28,27 @@ export const AwardsAndRecognition = () => {
 };
 
 const StyledAwardsAndRecognition = styled.section`
-    min-height: 497px;
-    margin-bottom: 128px;
+    margin-bottom: 14.11vh;
 `
 
 const TitleBlock = styled.div`
-    margin-bottom: 55px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
+    margin: 0 auto;
+    margin-bottom: 6.06vh;
+    width: 3.017em;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media ${Theme.media.tablet}{
+        margin: 3vh auto;
+    }
 `
 
 const ZText = styled.span`
     font-family: 'Jost';
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 120px;
     line-height: 150%;
     letter-spacing: -0.04em;
     text-align: center;
