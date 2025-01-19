@@ -23,8 +23,16 @@ export const Header = () => {
 const StyledHeader = styled.header`
     padding: 7vh 4.2vw 14vh 5.2vw;
 
+    @media ${Theme.media.screen} {
+        padding: 7vh 4.2vw 10vh 4.2vw;
+    }
+
     @media ${Theme.media.lgTablet} {
         padding: 7vh 10vw 14vh 10vw;
+    }
+
+    @media ${Theme.media.tablet} {
+        padding: 3vh 10vw 14vh 10vw;
     }
 `
 

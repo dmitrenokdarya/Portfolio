@@ -24,13 +24,20 @@ const StyledMain = styled.section`
     margin: 0 33vw 0 26vw;
     color: ${Theme.colors.font.white};
     
+    @media ${Theme.media.screen} {
+        margin: 0 15vw 0 15vw;
+    }
+
     @media ${Theme.media.lgTablet} {
         margin: 0 10vw 0 10vw;
+        padding-bottom: 10vh;
+        text-shadow: 0px 0px 2px ${Theme.colors.font.title};
     }
 `
+
 const Greetings = styled.span`
     text-transform: uppercase;
-    background-color: rgba(236, 236, 236, 0.17);;
+    background-color: rgba(236, 236, 236, 0.17);
     width: fit-content;
     padding: 0.167em 0.694em;
     font-family: "Inconsolata";
@@ -71,6 +78,10 @@ const GetInTouch = styled.a`
     &:hover{
         color: ${Theme.colors.font.activeMainButton};
         background-color: ${Theme.colors.font.white};
+    }
+
+    @media ${Theme.media.lgTablet} {
+        text-shadow: 0px 0px 2px ${Theme.colors.font.title};
     }
 `
 

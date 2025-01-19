@@ -52,6 +52,9 @@ const General = styled.div`
     
     @media ${Theme.media.tablet}{
         background-position-x: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     @media ${Theme.media.mobile}{

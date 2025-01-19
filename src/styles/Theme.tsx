@@ -38,7 +38,7 @@ export const Theme = {
 
     media:{
         lgScreen: "screen and (max-width: 1920px)",
-        screen: "screen and (max-width: 1200px)",
+        screen: "screen and (max-width: 1400px)",
         lgTablet: "screen and (max-width: 992px)",
         tablet: "screen and (max-width: 768px)",
         mobile: "screen and (max-width: 576px)"
