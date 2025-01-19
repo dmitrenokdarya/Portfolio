@@ -36,7 +36,7 @@ export default App;
 const General = styled.div`
     height: 100vh;
     max-width: 100%;
-    margin-bottom: 178px;
+    margin-bottom: 19.6%;
     background-image: url(${GeneralImage});
     background-repeat: no-repeat;
     background-size: cover;

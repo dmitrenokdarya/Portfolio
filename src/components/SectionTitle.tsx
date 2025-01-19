@@ -11,7 +11,7 @@ export const SectionTitle = styled.h2`
     font-style: normal;
     letter-spacing: 0.1em;
     line-height: 126%;
-    font-size: 22px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (22 - 12.83) + 12.83px);
     border: 0.09em solid ${Theme.colors.secondaryBg.titleBorder};
     position: absolute;
     z-index: 100;

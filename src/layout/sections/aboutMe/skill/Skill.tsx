@@ -24,27 +24,37 @@ export const Skill = (props: SkillPropsType) => {
 
 const StyledSkill = styled.div`
     font-weight: 400;
-    font-size: 17px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (17 - 10) + 10px);
     line-height: 124%;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: ${Theme.colors.font.littleText};
-    margin-bottom: 34px;
+    margin-bottom: 2em;
+    width: 28.94em;
+    
     &:last-child{
         margin-bottom: 0px;
+    }
+
+    @media ${Theme.media.screen}{
+        margin-bottom: 3em;
+    }
+
+    @media ${Theme.media.tablet}{
+        margin-bottom: 2em;
     }
 `
 
 const SkillBar = styled.div`
     display: flex; 
     align-items: center;
-    height: 1px;
+    height: 0.058em;
     background-color: ${Theme.colors.secondaryBg.skillsLine};
-    margin-top: 20px;
+    margin-top: 1.177em;
 `
 
 const SkillPer = styled.div<SkillPerPropsType>`
-    height: 3px;
+    height: 0.177em;
     width: ${props => props.width || '0%'};
     background-color: ${Theme.colors.secondaryBg.bigSkillLine};
 `

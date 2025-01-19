@@ -16,7 +16,7 @@ export const AboutMe = () => {
                     <ZText>about</ZText>
                     <SectionTitle>who am i</SectionTitle>
                 </TitleBlock>
-                <FlexWrapper justify="space-between">
+                <FlexBlock>
                     <TextButtonBlock>
                         <AboutMeText>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus accusan. maiores alias consequatur aut equatur aut perferendi.</AboutMeText>
                         <Button text="about me"/>
@@ -30,30 +30,35 @@ export const AboutMe = () => {
                             <Skill skill='indesign' percentage='87%'/>
                         </StyledUl>
                     </FlexWrapper>
-                </FlexWrapper>
+                </FlexBlock>
             </StyledAboutMe>
         </Container>
     );
 };
 
 const TitleBlock = styled.div`
-    margin-bottom: 20px;
-    width: 362px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
+    margin-bottom: 2.21%;
+    width: 3.017em;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media ${Theme.media.tablet}{
+        margin: auto;
+    }
 `
 
 const StyledAboutMe = styled.section`
-    margin-bottom: 118px;
+    margin-bottom: 13.01%;
     background-color: ${Theme.colors.primaryBg};
     z-index: 0;
 `
+
 const ZText = styled.span`
     font-family: 'Jost';
     font-weight: 300;
     text-transform: uppercase;
-    font-size: 120px;
     line-height: 150%;
     letter-spacing: -0.04em;
     text-align: center;
@@ -61,19 +66,42 @@ const ZText = styled.span`
     z-index: 1;
 `
 
+const FlexBlock = styled.div`
+    display: flex;
+    
+    @media ${Theme.media.tablet}{
+        flex-direction: column;
+    }
+`
+
 const AboutMeText = styled.p`
-    font-size: 17px;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (17 - 10) + 10px);
     font-weight: 400;
     letter-spacing: 0.02em;
     line-height: 238%;
     color: ${Theme.colors.font.paragraph};
-    margin-bottom: 60px;
+    margin-bottom: 3.53em;
+
+    @media ${Theme.media.screen}{
+        margin-bottom: 1.8em;
+    }
+
+    @media ${Theme.media.tablet}{
+        margin-bottom: 3.53em;
+    }
 `
 
 const TextButtonBlock = styled.div`
-    width: 638px;
+    max-width: 49.84%;
+    margin-right: 9.375%;
+
+    @media ${Theme.media.tablet}{
+        max-width: 100%;
+        margin-right: none;
+        margin-bottom: 3.53em;
+    }
 `
 
 const StyledUl = styled.ul`
-    width: 492px;
+
 `
