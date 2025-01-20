@@ -36,7 +36,7 @@ const StyledSlider = styled.div`
     color: ${Theme.colors.primaryBg};
 `
 const StyledTestimonial = styled.section`
-    margin-bottom: 17.64vh;
+    margin-bottom: 13vh;
     text-align: center;
 `
 const ReviewText = styled.p`

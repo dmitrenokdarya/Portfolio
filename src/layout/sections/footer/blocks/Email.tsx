@@ -17,6 +17,7 @@ export const Email = () => {
 };
 
 const StyledEmail = styled.div`
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (30 - 17.5) + 17.5px);
     width: 21.458vw;
 
     @media ${Theme.media.tablet}{
@@ -47,4 +48,8 @@ const StyledA = styled.a`
 const StyledHr = styled.hr`
     width: 20.468vw;
     border: 0.11vh solid ${Theme.colors.font.littleText};
+
+    @media ${Theme.media.lgTablet}{
+        display: none;
+    }
 `

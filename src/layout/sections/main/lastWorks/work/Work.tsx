@@ -49,7 +49,7 @@ const Description = styled.a`
     text-transform: lowercase;
     text-align: right;
     color: ${Theme.colors.font.littleText};
-    margin-bottom: 0.31em;
+    margin-bottom: 0.88vh;
 `
 
 const StyledHr = styled.hr`

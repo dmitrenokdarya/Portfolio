@@ -43,6 +43,7 @@ const BlackFont = styled.div`
 const TitleBlock = styled.div`
     font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
     margin: 0 auto;
+    padding-top: 4vh;
     margin-bottom: 6.06vh;
     width: 3.017em;
     display: flex;

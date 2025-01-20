@@ -7,11 +7,11 @@ import { Theme } from "../../../../styles/Theme";
 export const SocialIcons = () => {
     return (
         <StyledSocialIcons>
-            <a><Icon iconId="facebook" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)" /></a>
-            <a><Icon iconId="twiter" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
-            <a><Icon iconId="linkid" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
-            <a><Icon iconId="shar" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
-            <a><Icon iconId="youtube" width="calc( (100vw - 576px)/(1920 - 576) * (14 - 8.167) + 8.167px)"/></a>
+            <StyledA><Icon iconId="facebook" width="14px" /></StyledA>
+            <StyledA><Icon iconId="twiter" width="14px"/></StyledA>
+            <StyledA><Icon iconId="linkid" width="14px"/></StyledA>
+            <StyledA><Icon iconId="shar" width="14px"/></StyledA>
+            <StyledA><Icon iconId="youtube" width="14px" viewBox="0 0 18 14"/></StyledA>
         </StyledSocialIcons>
     );
 };
@@ -24,5 +24,11 @@ const StyledSocialIcons = styled.div`
 
     @media ${Theme.media.tablet}{
         margin: 0;
+    }
+`
+
+const StyledA = styled.a`
+    &:hover{
+        cursor: pointer;
     }
 `

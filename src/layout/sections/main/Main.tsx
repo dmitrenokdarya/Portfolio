@@ -33,6 +33,10 @@ const StyledMain = styled.section`
         padding-bottom: 10vh;
         text-shadow: 0px 0px 2px ${Theme.colors.font.title};
     }
+
+    @media ${Theme.media.mobile} {
+        padding-bottom: 13vh;
+    }
 `
 
 const Greetings = styled.span`
