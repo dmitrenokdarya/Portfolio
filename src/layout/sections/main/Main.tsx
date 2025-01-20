@@ -78,6 +78,7 @@ const GetInTouch = styled.a`
     width: fit-content;
     letter-spacing: 0.10em;
     padding: 0.947em 2.737em;
+    transition: all 0.2s ease;
 
     &:hover{
         color: ${Theme.colors.font.activeMainButton};

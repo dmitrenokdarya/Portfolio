@@ -49,7 +49,8 @@ const Input = styled.input`
     background-color: ${Theme.colors.font.placeholder};
     height: 5.513vh;
     border: none;
-    padding-left: 1.146vw;
+    padding: 0 1vw;
+    transition: all 0.2 ease;
 
     &::placeholder{
         font-family: "Manrope";
@@ -57,7 +58,15 @@ const Input = styled.input`
         font-size: calc( (100vw - 576px)/(1920 - 576) * (17 - 9.917) + 9.917px);
         letter-spacing: 0.02em;
         text-transform: capitalize;
+        text-align: center;
         color: ${Theme.colors.font.topFooterText};
+    }
+
+    &:hover{
+        background-color: #e7e7e7;
+        &::placeholder{
+            color: black;
+        }
     }
 `
 
@@ -71,6 +80,12 @@ const StyledButton = styled.button`
     background-color: ${Theme.colors.secondaryBg.buttonsBlack};
     letter-spacing: 0.10em;
     padding: 1.213vh 0.573vw;
+    transition: all 0.2s ease;
+
+    &:hover{
+        cursor: pointer;
+        font-size: calc( (100vw - 576px)/(1920 - 576) * (17.5 - 10.5) + 10.5px);
+    }
 
     @media ${Theme.media.tablet}{
         margin-bottom: 5vh;

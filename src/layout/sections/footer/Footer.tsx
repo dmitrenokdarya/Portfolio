@@ -44,7 +44,7 @@ const StyledMenu = styled.div`
 `
 
 const FooterTop = styled.div`
-    height: 36.825vh;
+    height: 37vh;
     margin: 1.5vh 0px 11.025vh 0px;
     display: flex;
     justify-content: space-between;

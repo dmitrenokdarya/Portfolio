@@ -27,9 +27,11 @@ const Block = styled.div`
     width: ${props => props.width || '11.4em'};
     height: 3.65em;
     padding: ${props => props.padding || '0.65em 2.24em'};
+    transition: all 0.2s ease;
 
     &:hover{
         cursor: pointer;
+        width: 100%;
     }
 `
 

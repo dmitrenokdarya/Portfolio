@@ -6,28 +6,24 @@ export const Menu = () => {
     return (
         <StyledNav>
             <StyledUl>
-                <div>
-                    <StyledLi>
-                        <StyledA href="">Home</StyledA>
-                    </StyledLi>
-                    <StyledLi>
-                        <StyledA href="">About</StyledA>
-                    </StyledLi>
-                    <StyledLi>
-                        <StyledA href="">Services</StyledA>
-                    </StyledLi>
-                    <StyledLi>
-                        <StyledA href="">Portfolio</StyledA>
-                    </StyledLi>
-                </div>
-                <div>
-                    <StyledLi>
-                        <StyledA href="">Blogs</StyledA>
-                    </StyledLi>
-                    <StyledLi>
-                        <StyledA href="">Contact</StyledA>
-                    </StyledLi>
-                </div>
+                <StyledLi>
+                    <StyledA href="">Home</StyledA>
+                </StyledLi>
+                <StyledLi>
+                    <StyledA href="">About</StyledA>
+                </StyledLi>
+                <StyledLi>
+                    <StyledA href="">Services</StyledA>
+                </StyledLi>
+                <StyledLi>
+                    <StyledA href="">Portfolio</StyledA>
+                </StyledLi>
+                <StyledLi>
+                    <StyledA href="">Blogs</StyledA>
+                </StyledLi>
+                <StyledLi>
+                    <StyledA href="">Contact</StyledA>
+                </StyledLi>
             </StyledUl>
         </StyledNav>
     );
@@ -43,7 +39,6 @@ const StyledUl = styled.ul`
     height: 25.36vh;
     gap: 5.52vw;
     flex-wrap: wrap;
-    justify-content: start;
 
     @media ${Theme.media.lgTablet}{
         height: auto;
