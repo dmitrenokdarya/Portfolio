@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../../../components/FlexWrapper";
-import { Theme } from "../../../../../styles/Theme";
+import { FlexWrapper } from "../../../../components/FlexWrapper";
+import { Theme } from "../../../../styles/Theme";
 
 type WorkPropsType = {
     imgsrc: string
@@ -25,7 +24,7 @@ export const Work = (props: WorkPropsType) => {
                 <ImageWork widthImg={props.width} src={props.imgsrc} alt="" />
                 <FlexWrapper direction="column">
                     <Description>{props.text}</Description>
-                    <StyledHr/>
+                    <StyledHr />
                 </FlexWrapper>
             </FlexWrapper>
         </StyledWork>

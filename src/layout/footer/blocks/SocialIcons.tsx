@@ -1,7 +1,6 @@
-import React from "react";
 import styled from "styled-components";
-import { Icon } from "../../../../components/icon/Icon";
-import { Theme } from "../../../../styles/Theme";
+import { Icon } from "../../../components/icon/Icon";
+import { Theme } from "../../../styles/Theme";
 
 
 export const SocialIcons = () => {

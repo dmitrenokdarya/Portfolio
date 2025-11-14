@@ -1,17 +1,17 @@
-import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../../components/FlexWrapper";
-import MagazineGirl from "../../../../assets/images/magazinegirl.webp"
-import Bottle from "../../../../assets/images/makeup.webp"
-import Magazine from "../../../../assets/images/magazine.png"
-import Coffee from "../../../../assets/images/coffee.png"
-import Mockup from "../../../../assets/images/mockup.webp"
-import Perfume from "../../../../assets/images/perfume.webp"
-import { SectionTitle } from "../../../../components/SectionTitle";
+import MagazineGirl from "../../../assets/images/magazine.png"
+import Bottle from "../../../assets/images/makeup.webp"
+import Magazine from "../../../assets/images/magazine.png"
+import Coffee from "../../../assets/images/coffee.png"
+import Mockup from "../../../assets/images/mockup.webp"
+import Perfume from "../../../assets/images/perfume.webp"
+import { Container } from "../../../components/Container";
+import { FlexWrapper } from "../../../components/FlexWrapper";
+import { SectionTitle } from "../../../components/SectionTitle";
 import { Work } from "./work/Work";
-import { Theme } from "../../../../styles/Theme";
-import { Container } from "../../../../components/Container";
-import { Button } from "../../../../components/button/Button";
+import { Button } from "../../../components/button/Button";
+import { Theme } from "../../../styles/Theme";
+
 
 
 export const LastWorks = () => {
@@ -25,15 +25,15 @@ export const LastWorks = () => {
                     </TitleBlock>
                     <FlexBlockWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="6.84vh" imgsrc={MagazineGirl} width="100%" text='magazine front design'/>
-                            <Work marginBottom="6.84vh" imgsrc={Bottle} width="100%" text='product bottle design'/>
-                            <Work imgsrc={Magazine} width="100%" text='magazine & brochure mockup'/>
+                            <Work marginBottom="6.84vh" imgsrc={MagazineGirl} width="100%" text='magazine front design' />
+                            <Work marginBottom="6.84vh" imgsrc={Bottle} width="100%" text='product bottle design' />
+                            <Work imgsrc={Magazine} width="100%" text='magazine & brochure mockup' />
                         </FlexWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="6.84vh" imgsrc={Coffee} width="100%" text='coffee bottle mockup'/>
-                            <Work marginBottom="6.84vh" imgsrc={Mockup} width="100%" text='product tag mockup'/>
-                            <Work marginBottom="16.32vh" imgsrc={Perfume} width="100%" text='perfume brand identity'/>
-                            <Button text="view all portfolio" padding="0.65em 2.12em" width="17.18em"/>
+                            <Work marginBottom="6.84vh" imgsrc={Coffee} width="100%" text='coffee bottle mockup' />
+                            <Work marginBottom="6.84vh" imgsrc={Mockup} width="100%" text='product tag mockup' />
+                            <Work marginBottom="16.32vh" imgsrc={Perfume} width="100%" text='perfume brand identity' />
+                            <Button text="view all portfolio" padding="0.65em 2.12em" width="17.18em" />
                         </FlexWrapper>
                     </FlexBlockWrapper>
                 </StyledLastWorks>

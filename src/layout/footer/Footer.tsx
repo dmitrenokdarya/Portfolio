@@ -1,14 +1,11 @@
-import React from "react";
 import styled from "styled-components";
-import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Subscribe } from "./blocks/Subscribe";
-import { Menu } from "../../../components/menu/Menu";
 import { Email } from "./blocks/Email";
 import { SocialIcons } from "./blocks/SocialIcons";
-import { Theme } from "../../../styles/Theme";
-import { Icon } from "../../../components/icon/Icon";
-import { Container } from "../../../components/Container";
-
+import { Container } from "../../components/Container";
+import { Icon } from "../../components/icon/Icon";
+import { Menu } from "../../components/menu/Menu";
+import { Theme } from "../../styles/Theme";
 
 export const Footer = () => {
     return (
