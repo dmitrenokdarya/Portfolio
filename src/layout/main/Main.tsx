@@ -1,18 +1,29 @@
 import styled from "styled-components";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Theme } from "../../styles/Theme";
+import { useState } from "react";
+import { Modal } from "../../components/modal/Modal";
 
 export const Main = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <StyledMain>
             <FlexWrapper direction="column">
                 <Greetings>hi! everyone</Greetings>
                 <MainText>
-                    <H2Styled>Chris Lee</H2Styled>
-                    <H2Styled as='h1'>Brand Designer</H2Styled>
+                    <H2Styled>Darya Dmitrenok</H2Styled>
+                    <H2Styled as='h1'>Front-end developer</H2Styled>
                 </MainText>
-                <MainDescription>Make designs mainly logos, visual identities, apps & websites, social media and magazines.</MainDescription>
-                <GetInTouch href="#">get in touch</GetInTouch>
+                <MainDescription>Crafting experiences where logic meets empathy</MainDescription>
+                <GetInTouch onClick={() => setIsModalOpen(true)}>
+                    get in touch
+                </GetInTouch>
+
+                <Modal
+                    isOpen={isModalOpen}
+                    onClose={() => setIsModalOpen(false)}
+                />
             </FlexWrapper>
         </StyledMain>
     );
@@ -20,10 +31,10 @@ export const Main = () => {
 
 const StyledMain = styled.section`
     max-height: 100vh;
-    margin: 0 33vw 0 26vw;
+    margin: 0 20vw 0 16vw;
     color: ${Theme.colors.font.white};
     
-    @media ${Theme.media.screen} {
+    @media ${Theme.media.mdScreen} {
         margin: 0 15vw 0 15vw;
     }
 
@@ -68,7 +79,7 @@ const MainDescription = styled.p`
     line-height: 1.98;
 `
 
-const GetInTouch = styled.a`
+const GetInTouch = styled.button`
     text-transform: uppercase;
     font-size: calc( (100vw - 576px)/(1920 - 576) * (19 - 11.2) + 11.2px);
     font-weight: 600;

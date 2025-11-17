@@ -12,6 +12,9 @@ import { Work } from "./work/Work";
 import { Button } from "../../../components/button/Button";
 import { Theme } from "../../../styles/Theme";
 
+import Todolist from "../../../assets/images/todolist.jpg"
+import Library from "../../../assets/images/library.jpg"
+
 
 
 export const LastWorks = () => {
@@ -25,14 +28,10 @@ export const LastWorks = () => {
                     </TitleBlock>
                     <FlexBlockWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="6.84vh" imgsrc={MagazineGirl} width="100%" text='magazine front design' />
-                            <Work marginBottom="6.84vh" imgsrc={Bottle} width="100%" text='product bottle design' />
-                            <Work imgsrc={Magazine} width="100%" text='magazine & brochure mockup' />
+                            <Work marginBottom="6.84vh" link='https://dmitrenokdarya.github.io/my-to-do-list/' imgsrc={Todolist} width="100%" text='advanced task management' discription="Todo List application with task management capabilities. Developed using React and TypeScript for code reliability, with local storage for data saving. Features a clean, minimalist interface design."/>
                         </FlexWrapper>
                         <FlexWrapper direction="column">
-                            <Work marginBottom="6.84vh" imgsrc={Coffee} width="100%" text='coffee bottle mockup' />
-                            <Work marginBottom="6.84vh" imgsrc={Mockup} width="100%" text='product tag mockup' />
-                            <Work marginBottom="16.32vh" imgsrc={Perfume} width="100%" text='perfume brand identity' />
+                            <Work marginBottom="6.84vh" link='https://dmitrenokdarya.github.io/2-sprint-hw/#/pre-junior' imgsrc={Library} width="100%" text='react components library' discription="A compact UI Components Library with three complexity tiers (Pre-junior, Junior, Junior+). A small collection of reusable React components showcasing different implementation approaches from basic to advanced patterns."/>
                             <Button text="view all portfolio" padding="0.65em 2.12em" width="17.18em" />
                         </FlexWrapper>
                     </FlexBlockWrapper>
@@ -44,7 +43,7 @@ export const LastWorks = () => {
 
 const StyledLastWorks = styled.section`
     background-color: ${Theme.colors.primaryBg};
-    margin-bottom: 38.04vh;
+    margin-bottom: 11rem;
 
     @media ${Theme.media.tablet}{
         margin-bottom: 13.01vh;

@@ -6,8 +6,8 @@ export const Email = () => {
     return (
         <StyledEmail>
             <FlexWrapper direction="column">
-                <StyledP>Just feel free to contact if you wanna collaborate with me, or simply have a conversation.</StyledP>
-                <StyledA href="">templatesjungle@gmail.com</StyledA>
+                <StyledP>Just feel free to contact if you wanna collaborate with me, or simply have a conversation :)</StyledP>
+                <StyledA href="">dmitrenokdarya@gmail.com</StyledA>
                 <StyledHr/>
             </FlexWrapper>
         </StyledEmail>

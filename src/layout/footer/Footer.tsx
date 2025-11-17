@@ -7,22 +7,23 @@ import { Icon } from "../../components/icon/Icon";
 import { Menu } from "../../components/menu/Menu";
 import { Theme } from "../../styles/Theme";
 
+
 export const Footer = () => {
     return (
         <StyledFooter>
             <Container>
-                <Icon iconId={"logoBlack"} width={'calc( (100vw - 576px)/(1920 - 576) * (94 - 54.83) + 54.83px)'} heigth={'45'} viewBox={'0 0 94 45'}/>
+                <Icon iconId={'logoDark'} width={'calc( (100vw - 576px)/(1920 - 576) * (127 - 54.8) + 54.8px)'} heigth={'45'} viewBox={'0 0 127 45'} />
                 <FooterTop>
-                    <Subscribe/>
+                    {/* <Subscribe /> */}
                     <StyledMenu>
-                        <Menu/> 
+                        <Menu />
                     </StyledMenu>
-                    <Email/>               
+                    <Email />
                 </FooterTop>
             </Container>
             <FooterBottom>
-                <SocialIcons/>
-                <StyledP>Template designed by : Templates Jungle</StyledP>
+                <SocialIcons />
+                <StyledP>Template designed by : daarry.s</StyledP>
             </FooterBottom>
         </StyledFooter>
     );

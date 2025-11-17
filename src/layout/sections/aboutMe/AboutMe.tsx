@@ -17,16 +17,18 @@ export const AboutMe = () => {
                 </TitleBlock>
                 <FlexBlock>
                     <TextButtonBlock>
-                        <AboutMeText>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat quia voluptas sit aspernatur te natus accusan. maiores alias consequatur aut equatur aut perferendi.</AboutMeText>
-                        <Button text="about me"/>
+                        <AboutMeText>A Аrontend developer with experience developing on the React/Next.js/TypeScript stack and coordinating a team on an academic project. I strive to deepen my expertise in the React ecosystem and am currently learning Server Components in Next.js and best practices for RSC. I am actively developing my technical English for working in an IT environment.
+                        </AboutMeText>
+                        <Button text="about me" />
                     </TextButtonBlock>
                     <FlexBlockWrapper>
                         <StyledUl>
-                            <Skill skill='photoshop' percentage='75%'/>
-                            <Skill skill='illustrator' percentage='87%'/>
-                            <Skill skill='figma' percentage='85%'/>
-                            <Skill skill='after effect' percentage='78%'/>
-                            <Skill skill='indesign' percentage='87%'/>
+                            <Skill skill='HTML5' percentage='97%' />
+                            <Skill skill='CSS' percentage='95%' />
+                            <Skill skill='Java Script' percentage='97%' />
+                            <Skill skill='Type Script' percentage='95%' />
+                            <Skill skill='React.js' percentage='95%' />
+                            <Skill skill='Next.js' percentage='80%' />
                         </StyledUl>
                     </FlexBlockWrapper>
                 </FlexBlock>
@@ -37,7 +39,7 @@ export const AboutMe = () => {
 
 const TitleBlock = styled.div`
     font-size: calc( (100vw - 576px)/(1920 - 576) * (120 - 70) + 70px);
-    margin-bottom: 2.21vh;
+    margin-bottom: 3rem;
     width: 3.017em;
     display: flex;
     justify-content: center;

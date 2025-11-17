@@ -18,8 +18,8 @@ export const SocialIcons = () => {
 
 const StyledSocialIcons = styled.div`
     display: flex;
-    gap: 3.4375vw;
-    margin: auto 0px auto 16.77vw;
+    gap: 4rem;
+    margin: auto 0 auto 15rem;
 
     @media ${Theme.media.tablet}{
         margin: 0;

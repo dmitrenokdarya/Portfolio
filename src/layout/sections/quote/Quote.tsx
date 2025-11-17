@@ -13,8 +13,8 @@ export const Quote = () => {
                 <QuoteTitle>Quote of the day</QuoteTitle>
                 <StyledHr/>
                 <FlexWrapper direction="column" align="center">
-                    <QuoteText>“Success is not final; failure is not fatal: it is the courage to continue that counts.”</QuoteText>
-                    <QuoteAuthor>-Winston Churchill</QuoteAuthor>
+                    <QuoteText>“We are what we repeatedly do. Excellence, then, is not an act, but a habit.”</QuoteText>
+                    <QuoteAuthor>-Aristotle</QuoteAuthor>
                 </FlexWrapper>
             </FlexWrapper>
             <FlexWrapper align="end">
@@ -27,6 +27,7 @@ export const Quote = () => {
 const StyledQuote = styled.div`
     display: flex;
     justify-content: space-between;
+    margin-bottom: 11rem;
     width: 100%;
     padding: 9vh 3.125vw;
     background-color: ${Theme.colors.secondaryBg.quoteBlack};
