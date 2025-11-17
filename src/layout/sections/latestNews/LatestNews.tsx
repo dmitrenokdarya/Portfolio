@@ -6,7 +6,7 @@ import { Container } from "../../../components/Container";
 import Shoper from "../../../assets/images/shoper.webp";
 import Package from "../../../assets/images/package.webp";
 import Camera from "../../../assets/images/camera.png";
-import { Icon } from "../../../components/icon/Icon"; 
+import { Icon } from "../../../components/icon/Icon";
 
 export const LatestNews = () => {
     return (
@@ -17,13 +17,13 @@ export const LatestNews = () => {
                     <SectionTitle>Latest news</SectionTitle>
                 </TitleBlock>
                 <BlockNew>
-                    <New cardImg={Shoper} section="Graphic Design" date="July 1, 2021" caption="Graphic Designing Useful Tips & Best Practices"/>
-                    <New cardImg={Package} section="Graphic Design" date="July 1, 2021" caption="basic typography rules for ui designing"/>
-                    <New cardImg={Camera} section="Graphic Design" date="July 1, 2021" caption="top 10 graphic designs review in 2021"/>
+                    <New cardImg={Shoper} section="Graphic Design" date="July 1, 2021" caption="Graphic Designing Useful Tips & Best Practices" />
+                    <New cardImg={Package} section="Graphic Design" date="July 1, 2021" caption="basic typography rules for ui designing" />
+                    <New cardImg={Camera} section="Graphic Design" date="July 1, 2021" caption="top 10 graphic designs review in 2021" />
                 </BlockNew>
                 <FlexBlockWrapper>
                     <StyledButton href="">view all blogs</StyledButton>
-                    <Icon iconId="buttonStrelBlack" width="calc( (100vw - 576px)/(1920 - 576) * (16 - 9.3) + 9.3px)" heigth="13" viewBox="0 0 10 9"/>
+                    <Icon iconId="buttonStrelBlack" width="calc( (100vw - 576px)/(1920 - 576) * (16 - 9.3) + 9.3px)" height="13" viewBox="0 0 10 9" />
                 </FlexBlockWrapper>
             </StyledLatestNews>
         </Container>

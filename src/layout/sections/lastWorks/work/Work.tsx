@@ -89,5 +89,5 @@ const Description = styled.a`
 `
 
 const StyledHr = styled.hr`
-    border: 0.115em solid ${Theme.colors.font.littleText};
+    border: 0.06rem solid ${Theme.colors.font.littleText};
 `

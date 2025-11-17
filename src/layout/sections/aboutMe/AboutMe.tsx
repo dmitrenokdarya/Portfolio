@@ -9,7 +9,7 @@ import { Button } from "../../../components/button/Button";
 
 export const AboutMe = () => {
     return (
-        <Container>
+        <Container id="about">
             <StyledAboutMe>
                 <TitleBlock>
                     <ZText>about</ZText>

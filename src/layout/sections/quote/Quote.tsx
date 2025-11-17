@@ -7,18 +7,18 @@ export const Quote = () => {
     return (
         <StyledQuote>
             <FlexWrapper align="start">
-                <Icon iconId='cosochki_1' width="calc( (100vw - 576px)/(1920 - 576) * (385 - 224.6) + 22.46px)" heigth="321" viewBox="0 0 385 321"/>
+                <Icon iconId='cosochki_1' width="calc( (100vw - 576px)/(1920 - 576) * (385 - 224.6) + 22.46px)" height="321" viewBox="0 0 385 321" />
             </FlexWrapper>
             <FlexWrapper direction="column" align="center" justify="center">
                 <QuoteTitle>Quote of the day</QuoteTitle>
-                <StyledHr/>
+                <StyledHr />
                 <FlexWrapper direction="column" align="center">
                     <QuoteText>“We are what we repeatedly do. Excellence, then, is not an act, but a habit.”</QuoteText>
                     <QuoteAuthor>-Aristotle</QuoteAuthor>
                 </FlexWrapper>
             </FlexWrapper>
             <FlexWrapper align="end">
-                <Icon iconId='cosochki_2' width="calc( (100vw - 576px)/(1920 - 576) * (385 - 224.6) + 22.46px)" heigth="calc( (100vw - 576px)/(1920 - 576) * (321 - 187.25) + 187.25px)" viewBox="0 0 385 321"/>
+                <Icon iconId='cosochki_2' width="calc( (100vw - 576px)/(1920 - 576) * (385 - 224.6) + 22.46px)" height="calc( (100vw - 576px)/(1920 - 576) * (321 - 187.25) + 187.25px)" viewBox="0 0 385 321" />
             </FlexWrapper>
         </StyledQuote>
     );
@@ -27,7 +27,7 @@ export const Quote = () => {
 const StyledQuote = styled.div`
     display: flex;
     justify-content: space-between;
-    margin-bottom: 11rem;
+    margin-bottom: 4rem;
     width: 100%;
     padding: 9vh 3.125vw;
     background-color: ${Theme.colors.secondaryBg.quoteBlack};

@@ -10,7 +10,7 @@ type PaginationPropsType = {
 export const Pagination = (props: PaginationPropsType) => {
     return (
         <StyledPagination>
-                <Icon iconId={props.type} width={'calc( (100vw - 576px)/(1920 - 576) * (27 - 15.75) + 15.75px)'} heigth={'45'} viewBox={'0 0 27 45'}/>
+            <Icon iconId={props.type} width={'calc( (100vw - 576px)/(1920 - 576) * (27 - 15.75) + 15.75px)'} height={'45'} viewBox={'0 0 27 45'} />
         </StyledPagination>
     );
 };

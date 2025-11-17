@@ -19,16 +19,13 @@ import { channel } from 'diagnostics_channel';
 function App() {
     return (
         <div className="App">
-            <General>
+            <General id="home">
                 <Header/>
                 <Main/>
             </General>
             <AboutMe/>
             <LastWorks/>
             <Quote/>
-            {/* <AwardsAndRecognition/> */}
-            {/* <LatestNews/>
-            <Testimonials/> */}
             <Footer/>
         </div>
     );

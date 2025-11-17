@@ -1,31 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import { Theme } from "../../styles/Theme";
+import { Modal } from "../modal/Modal";
 
 export const Menu = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
     return (
         <StyledNav>
             <StyledUl>
                 <div>
                     <StyledLi>
-                        <StyledA href="">Home</StyledA>
+                        <StyledA href="#home">Home</StyledA>
                     </StyledLi>
                     <StyledLi>
-                        <StyledA href="">About</StyledA>
+                        <StyledA href="#about">About</StyledA>
                     </StyledLi>
                     <StyledLi>
-                        <StyledA href="">Services</StyledA>
+                        <StyledA href="#portfolio">Portfolio</StyledA>
                     </StyledLi>
                     <StyledLi>
-                        <StyledA href="">Portfolio</StyledA>
-                    </StyledLi>
-                </div>
-                <div>
-                    <StyledLi>
-                        <StyledA href="">Blogs</StyledA>
-                    </StyledLi>
-                    <StyledLi>
-                        <StyledA href="">Contact</StyledA>
+                        <ButtonLink onClick={() => setIsModalOpen(true)}>Contact</ButtonLink>
+                        <Modal
+                            isOpen={isModalOpen}
+                            onClose={() => setIsModalOpen(false)}
+                        />
                     </StyledLi>
                 </div>
             </StyledUl>
@@ -69,6 +68,19 @@ const StyledA = styled.a`
         color: ${Theme.colors.font.topFooterActiveMenu};
     }
 `
+
+const ButtonLink = styled.button`
+   font-weight: 600;
+    font-size: calc( (100vw - 576px)/(1920 - 576) * (17 - 9.917) + 9.917px);
+    line-height: 331%;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: ${Theme.colors.font.topFooterPassiveMenu};
+
+    &:hover{
+        color: ${Theme.colors.font.topFooterActiveMenu};
+    }
+`;
 
 const StyledLi = styled.li`
 

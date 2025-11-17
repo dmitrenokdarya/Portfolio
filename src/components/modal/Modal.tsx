@@ -62,8 +62,8 @@ const CloseButton = styled.button`
 const ContactModalContent = () => {
 
     const handleLocationClick = () => {
-    window.open('https://www.google.com/maps/place/Minsk', '_blank');
-};
+        window.open('https://www.google.com/maps/place/Minsk', '_blank');
+    };
 
     const handleEmailClick = () => {
         window.location.href = 'mailto:dmitrenokdarya@gmail.com';
@@ -82,9 +82,8 @@ const ContactModalContent = () => {
     };
 
     const handleCVDownload = () => {
-        // Замени на реальную ссылку на твое CV
         const link = document.createElement('a');
-        link.href = '/path-to-your-cv.pdf';
+        link.href = '/Darya_Dmitrenok_CV.pdf';
         link.download = 'Darya_Dmitrenok_CV.pdf';
         link.click();
     };
@@ -98,32 +97,32 @@ const ContactModalContent = () => {
 
             <ContactButtonsContainer>
                 <ContactButton onClick={handleLocationClick}>
-                    <Icon iconId='location' width='25' heigth='25' viewBox='0 0 35 35' />
+                    <Icon iconId='location' width='25' height='25' viewBox='0 0 35 35' />
                     Minsk, Belarus
                 </ContactButton>
 
                 <ContactButton onClick={handleCVDownload}>
-                    <Icon iconId='email' width='25' heigth='25' viewBox='0 0 35 35' />
+                    <Icon iconId='email' width='25' height='25' viewBox='0 0 35 35' />
                     Download CV
                 </ContactButton>
 
                 <ContactButton onClick={handleEmailClick}>
-                    <Icon iconId='email' width='25' heigth='25' viewBox='0 0 35 35' />
+                    <Icon iconId='email' width='25' height='25' viewBox='0 0 35 35' />
                     Email me
                 </ContactButton>
 
                 <ContactButton onClick={handleTelegramClick}>
-                    <Icon iconId='telegram' width='25' heigth='25' viewBox='0 0 40 40' />
+                    <Icon iconId='telegram' width='25' height='25' viewBox='0 0 40 40' />
                     Telegram
                 </ContactButton>
 
                 <ContactButton onClick={handleLinkedInClick}>
-                    <Icon iconId='linkedin' width='25' heigth='25' viewBox='0 0 35 35' />
+                    <Icon iconId='linkedin' width='25' height='25' viewBox='0 0 35 35' />
                     LinkedIn
                 </ContactButton>
 
                 <ContactButton onClick={handleGitHubClick}>
-                    <Icon iconId='github' width='25' heigth='25' viewBox='0 0 35 35' />
+                    <Icon iconId='github' width='25' height='25' viewBox='0 0 35 35' />
                     GitHub
                 </ContactButton>
             </ContactButtonsContainer>
@@ -135,7 +134,7 @@ const ContactModalContent = () => {
     );
 };
 
-// Стили для модалки контактов
+
 const ModalContentWrapper = styled.div`
     display: flex;
     flex-direction: column;

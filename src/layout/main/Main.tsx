@@ -79,7 +79,7 @@ const MainDescription = styled.p`
     line-height: 1.98;
 `
 
-const GetInTouch = styled.button`
+export const GetInTouch = styled.button`
     text-transform: uppercase;
     font-size: calc( (100vw - 576px)/(1920 - 576) * (19 - 11.2) + 11.2px);
     font-weight: 600;
@@ -93,6 +93,7 @@ const GetInTouch = styled.button`
     &:hover{
         color: ${Theme.colors.font.activeMainButton};
         background-color: ${Theme.colors.font.white};
+        cursor: pointer;
     }
 
     @media ${Theme.media.lgTablet} {

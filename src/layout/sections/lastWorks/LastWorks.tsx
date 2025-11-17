@@ -19,7 +19,7 @@ import Library from "../../../assets/images/library.jpg"
 
 export const LastWorks = () => {
     return (
-        <Container>
+        <Container id="portfolio">
             <FlexWrapper justify="center">
                 <StyledLastWorks>
                     <TitleBlock>
