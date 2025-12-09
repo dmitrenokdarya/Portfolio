@@ -7,12 +7,14 @@ type ButtonPropsType = {
     text: string;
     padding?: string;
     width?: string;
+    margin?:string;
+    link?:string
 }
 
 export const Button = (props: ButtonPropsType) => {
     return (
-        <Block padding={props.padding} width={props.width}>
-            <StyledA href="">{props.text}</StyledA>
+        <Block padding={props.padding} width={props.width} margin={props.margin}>
+            <StyledA href={props.link || ''}>{props.text}</StyledA>
             <Icon iconId="buttonStrel" width="calc( (100vw - 576px)/(1920 - 576) * (10 - 5.83) + 5.83px)" height="9" viewBox="0 0 10 9"/>
         </Block>
     )
@@ -27,6 +29,7 @@ const Block = styled.div`
     width: ${props => props.width || '11.4em'};
     height: 3.65em;
     padding: ${props => props.padding || '0.65em 2.24em'};
+    margin: ${props => props.margin || ''};
     transition: all 0.2s ease;
 
     &:hover{

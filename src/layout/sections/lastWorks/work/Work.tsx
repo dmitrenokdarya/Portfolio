@@ -5,7 +5,7 @@ import { Theme } from "../../../../styles/Theme";
 type WorkPropsType = {
     imgsrc: string
     text: string
-    discription: string
+    discription: string | React.ReactNode
     width: string
     marginBottom?: string
     link: string
@@ -40,6 +40,7 @@ export const Work = (props: WorkPropsType) => {
 
 const StyledWork = styled.a<StyledWorkPropsType>`
     margin-bottom: ${props => props.marginBottom || '0px'};
+    grid-row: span 10;
 `
 const ImageContainer = styled.div`
     position: relative;
