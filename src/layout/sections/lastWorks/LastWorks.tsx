@@ -9,6 +9,7 @@ import { Theme } from "../../../styles/Theme";
 import Todolist from "../../../assets/images/todolist.jpg";
 import Library from "../../../assets/images/library.jpg";
 import MyPixelgram from "../../../assets/images/MyPixelgram.jpg";
+import { Link } from "react-router-dom";
 
 export const LastWorks = () => {
   return (
@@ -20,42 +21,52 @@ export const LastWorks = () => {
             <SectionTitle>Latest works</SectionTitle>
           </TitleBlock>
           <GridBlockWrapper>
-              <Work
-                marginBottom="6.84vh"
-                link="https://mypixelgram.ru/"
-                imgsrc={MyPixelgram}
-                width="100%"
-                text="social media platform"
-                discription={
-                    <>
-                    <ProgressLabel>In progress :)</ProgressLabel>
-                    <br/>A comprehensive social media platform developed from scratch using modern web technologies. The application enables users to create accounts, share multimedia content, interact through likes and comments, and build connections in a visually appealing interface. Built with a scalable architecture supporting real-time updates and responsive design for optimal user experience across all devices.
-                    </>
-            }
-              />
-              <Work
-                marginBottom="6.84vh"
-                link="https://dmitrenokdarya.github.io/my-to-do-list/"
-                imgsrc={Todolist}
-                width="100%"
-                text="advanced task management"
-                discription="Todo List application with task management capabilities. Developed using React and TypeScript for code reliability, with local storage for data saving. Features a clean, minimalist interface design."
-              />
-              <Work
-                marginBottom="6.84vh"
-                link="https://dmitrenokdarya.github.io/2-sprint-hw/#/pre-junior"
-                imgsrc={Library}
-                width="100%"
-                text="react components library"
-                discription="A compact UI Components Library with three complexity tiers (Pre-junior, Junior, Junior+). A small collection of reusable React components showcasing different implementation approaches from basic to advanced patterns."
-              />
-            <Button
-              text="view all portfolio"
-              margin="15vw 0 0 0"
-              padding="0.65em 2.12em"
-              width="17.18em"
-              link="https://github.com/dmitrenokdarya"
+            <Work
+              marginBottom="6.84vh"
+              link="https://mypixelgram.ru/"
+              imgsrc={MyPixelgram}
+              width="100%"
+              text="social media platform"
+              discription={
+                <>
+                  <ProgressLabel>In progress :)</ProgressLabel>
+                  <br />
+                  A full-fledged social network built from the ground up using a
+                  modern technology stack. The platform enables users to:
+                  <br />- post photos to their feed,
+                  <br />- follow other users' profiles,
+                  <br />- purchase a premium subscription,
+                  <br />- leave comments,
+                  <br />- like content, 
+                  <br />- exchange private messages.
+                  <br /><br />And much more.
+                </>
+              }
             />
+            <Work
+              marginBottom="6.84vh"
+              link="https://dmitrenokdarya.github.io/my-to-do-list"
+              imgsrc={Todolist}
+              width="100%"
+              text="advanced task management"
+              discription="A task management application built with React and TypeScript to ensure code reliability and strict typing. All tasks are stored in the browser's local storage (localStorage), guaranteeing data persistence between sessions. The interface features a clean, minimalist design that focuses on productivity."
+            />
+            <Work
+              marginBottom="6.84vh"
+              link="https://dmitrenokdarya.github.io/2-sprint-hw/#/pre-junior"
+              imgsrc={Library}
+              width="100%"
+              text="react components library"
+              discription="A compact library of reusable React components across three difficulty levels (Pre-junior, Junior, Junior+)."
+            />
+            <Link to="/projects">
+              <Button
+                text="view all portfolio"
+                margin="15vw 0 0 0"
+                padding="0.65em 2.12em"
+                width="17.18em"
+              />
+            </Link>
           </GridBlockWrapper>
         </StyledLastWorks>
       </FlexWrapper>
@@ -87,11 +98,11 @@ const TitleBlock = styled.div`
 `;
 
 const GridBlockWrapper = styled.div`
- display: grid;
+  display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
-  grid-auto-rows: 5px; 
+  grid-auto-rows: 5px;
   gap: 3vw;
-  grid-template-rows: masonry; 
+  grid-template-rows: masonry;
 `;
 
 const ZText = styled.span`
@@ -105,10 +116,9 @@ const ZText = styled.span`
   z-index: 1;
 `;
 
-const ProgressLabel = styled.span`
+export const ProgressLabel = styled.span`
   display: inline-block;
   color: orange;
   font-weight: bold;
   margin-bottom: 10px;
 `;
-

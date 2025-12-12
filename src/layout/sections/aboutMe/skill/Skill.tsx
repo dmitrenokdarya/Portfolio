@@ -3,20 +3,17 @@ import { Theme } from "../../../../styles/Theme";
 
 type SkillPropsType = {
     skill: string
-    percentage: string
+    // percentage: string
 }
 
-type SkillPerPropsType = {
-    width: string
-}
 
 export const Skill = (props: SkillPropsType) => {
     return (
         <StyledSkill>
             <li>{props.skill}</li>
-            <SkillBar>
+            {/* <SkillBar>
                 <SkillPer width={props.percentage}/>
-            </SkillBar>
+            </SkillBar> */}
         </StyledSkill>
     );
 };
@@ -29,7 +26,7 @@ const StyledSkill = styled.div`
     text-transform: uppercase;
     color: ${Theme.colors.font.littleText};
     margin-bottom: 2em;
-    width: 28.94em;
+    width: fit-content;
     
     &:last-child{
         margin-bottom: 0px;
@@ -45,18 +42,4 @@ const StyledSkill = styled.div`
         flex-direction: column;
         width: auto;
     }
-`
-
-const SkillBar = styled.div`
-    display: flex; 
-    align-items: center;
-    height: 0.058em;
-    background-color: ${Theme.colors.secondaryBg.skillsLine};
-    margin-top: 1.177em;
-`
-
-const SkillPer = styled.div<SkillPerPropsType>`
-    height: 0.177em;
-    width: ${props => props.width || '0%'};
-    background-color: ${Theme.colors.secondaryBg.bigSkillLine};
 `
