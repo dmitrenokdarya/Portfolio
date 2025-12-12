@@ -72,7 +72,7 @@ export const AboutMePage = () => {
                 style={{ cursor: "pointer", color: Theme.colors.primaryBg }}
                 href="https://it-incubator.io"
               >
-                IT-INCUBATOR
+                IT-INCUBATOR 
               </a>
               | 2024
             </StyledEd>

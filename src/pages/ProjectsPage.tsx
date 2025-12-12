@@ -4,11 +4,11 @@ import { FooterBottom, StyledP } from "../layout/footer/Footer";
 import { Header } from "../layout/header/Header";
 import { Theme } from "../styles/Theme";
 import { FlexWrapper } from "../components/FlexWrapper";
-import Todolist from "../assets/images/todolist.jpg";
-import Library from "../assets/images/library.jpg";
-import MyPixelgram from "../assets/images/MyPixelgram.jpg";
 
 export const ProjectsPage = () => {
+  const Todolist = require("../assets/images/ToDoListVideo.mp4");
+  const Library = require("../assets/images/LibraryVideo.mp4");
+  const MyPixelgram = require("../assets/images/MyPixelgramVideo.mp4");
   return (
     <ProjectsWrapper>
       <Header />
@@ -164,18 +164,19 @@ const ProjectWrapper = ({
         <StyledSkill href={linkDemo}>Demo</StyledSkill> |{" "}
         <StyledSkill href={linkGitHub}>GitHub</StyledSkill>
       </FlexWrapper>
-      <FlexWrapper gap="15px" align="center">
-        <PProject>{discription}</PProject>
-        <img
-          src={photo}
-          alt="projectPhoto"
-          style={{
-            height: "auto",
-            width: "270px",
-            borderRadius: "10px",
-          }}
-        />
-      </FlexWrapper>
+      <video
+        controls
+        playsInline
+        loop
+        preload="metadata"
+        autoPlay 
+        muted 
+        style={{
+        }}
+      >
+        <source src={photo} type="video/mp4" />
+      </video>
+      <PProject>{discription}</PProject>
     </FlexWrapper>
   );
 };
