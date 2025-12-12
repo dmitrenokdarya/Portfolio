@@ -12,7 +12,7 @@ export const AboutMePage = () => {
     StateManagement: ["React Router Dom", "RTK Query", "REST API"],
     FormsValidation: ["React Hook Form", "Zod"],
     UILibraries: ["Radix UI", "Material UI"],
-    Testing: ["Unit Tests (Jest)", "Storybook"],
+    Testing: ["Unit Tests", "Storybook"],
     Tools: ["Git/GitHub", "Node.js", "ESLint", "Prettier", "Figma"],
     Languages: ["English (B1)"],
   };
