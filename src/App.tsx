@@ -17,8 +17,9 @@ const ScrollToTop = () => {
 };
 
 function App() {
+  const basename = process.env.PUBLIC_URL || '';
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
     <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
