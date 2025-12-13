@@ -8,7 +8,14 @@ import { FlexWrapper } from "../components/FlexWrapper";
 
 export const AboutMePage = () => {
   const Skills = {
-    FrontendCore: ["JavaScript", "TypeScript", "React.js", "Next.js", "HTML5", "CSS"],
+    FrontendCore: [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "HTML5",
+      "CSS",
+    ],
     StateManagement: ["React Router Dom", "RTK Query", "REST API"],
     FormsValidation: ["React Hook Form", "Zod"],
     UILibraries: ["Radix UI", "Material UI"],
@@ -25,11 +32,15 @@ export const AboutMePage = () => {
         <H2Text color={Theme.colors.primaryBg}>about</H2Text>
         <FlexWrapper gap="20px">
           <Description>
-            Frontend Developer with 1+ years of experience in the React /
-            Next.js / TypeScript stack. Actively interested in modern approaches
-            within the React ecosystem, specifically studying the principles of
-            Server Components in Next.js. Looking towards React Native mobile
-            development as a promising direction for growth. Open to your
+            Frontend Developer with 1+ years of experience working with React,
+            Next.js, and TypeScript, focused on building clean, maintainable,
+            and user-friendly web interfaces. Experienced in API integration,
+            reusable component development, form handling, and working with
+            modern UI libraries. Actively interested in modern approaches within
+            the React ecosystem and continuously improving skills by keeping up
+            with evolving best practices. Comfortable collaborating with other
+            developers in project teams and helping deliver applications from
+            scratch to production-ready versions. Open to new frontend
             opportunities.
           </Description>
           <img
@@ -72,7 +83,7 @@ export const AboutMePage = () => {
                 style={{ cursor: "pointer", color: Theme.colors.primaryBg }}
                 href="https://it-incubator.io"
               >
-                IT-INCUBATOR 
+                IT-INCUBATOR
               </a>
               | 2024
             </StyledEd>
@@ -115,7 +126,7 @@ const AboutMeWrapper = styled.div`
 `;
 
 const Description = styled.p`
-  font-size: calc((100vw - 576px) / (1920 - 576) * (25 - 10) + 10px);
+  font-size: calc((100vw - 576px) / (1920 - 576) * (22 - 10) + 10px);
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 238%;

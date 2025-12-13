@@ -36,12 +36,11 @@ export const AboutMe = () => {
         <FlexBlock>
           <TextButtonBlock>
             <AboutMeText>
-              Frontend Developer with 1+ years of experience in the React /
-              Next.js / TypeScript stack. Actively interested in modern
-              approaches within the React ecosystem, specifically studying the
-              principles of Server Components in Next.js. Looking towards React
-              Native mobile development as a promising direction for growth.
-              Open to your opportunities.
+              Frontend Developer with 1+ years of experience working with React,
+            Next.js, and TypeScript, focused on building clean, maintainable,
+            and user-friendly web interfaces. Experienced in API integration,
+            reusable component development, form handling, and working with
+            modern UI libraries.
             </AboutMeText>
             <Link to="/aboutme">
               <Button text="about me" />
@@ -100,7 +99,7 @@ const FlexBlock = styled.div`
 `;
 
 export const AboutMeText = styled.p`
-  font-size: calc((100vw - 576px) / (1920 - 576) * (17 - 10) + 10px);
+  font-size: calc((100vw - 576px) / (1920 - 576) * (16 - 10) + 10px);
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 238%;
