@@ -8,12 +8,12 @@ import { FlexWrapper } from "../components/FlexWrapper";
 
 export const AboutMePage = () => {
   const Skills = {
-    FrontendCore: ["JavaScript", "TypeScript", "React.js", "HTML5", "CSS"],
+    FrontendCore: ["JavaScript", "TypeScript", "React.js", "Next.js", "HTML5", "CSS"],
     StateManagement: ["React Router Dom", "RTK Query", "REST API"],
     FormsValidation: ["React Hook Form", "Zod"],
     UILibraries: ["Radix UI", "Material UI"],
     Testing: ["Unit Tests", "Storybook"],
-    Tools: ["Git/GitHub", "Node.js", "ESLint", "Prettier", "Figma"],
+    Tools: ["Git/GitHub", "ESLint", "Prettier", "Figma"],
     Languages: ["English (B1)"],
   };
 
