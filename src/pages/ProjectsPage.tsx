@@ -32,11 +32,30 @@ export const ProjectsPage = () => {
                 >
                   Frontend Development & Architecture:
                 </p>
-                - Implemented user profile password change functionality Created
-                PostCreator component and its modal window components for post
-                creation in the application;
-                <br />- Built the Settings page for user information
-                entry/editing.
+                1. Password Recovery with reCAPTCHA v3:
+                <br />- Developed password recovery flow: email input form →
+                link sending → password change form
+                <br />- Integrated Google reCAPTCHA v3 for bot protection
+                <br />
+                2. Post Creation with Multi-Modal Interface:
+                <br />- Developed complex PostCreator component managing
+                navigation between 4 modal windows
+                <br />- Implemented state for storing uploaded photos and post
+                data
+                <br />- Created modal window for applying filters to photos
+                according to project design 1. Password Recovery with reCAPTCHA
+                <br />
+                3. Profile Settings Page with Validation
+                <br />- Implemented tab navigation between 4 settings sections
+                <br />- Developed profile editing form with 7 fields: Username,
+                First Name, Last Name, Date of Birth, Country, City, About Me
+                <br />- Created custom DatePicker with two-way synchronization
+                (calendar ↔ input)n
+                <br />- Configured validation for each form field according to
+                technical requirements
+                <br />- Implemented dependent selectors "Country → City" with
+                data from backend
+                <br />- Blocked form submission when required fields are invalid
                 <br />
                 <br />
                 <p
@@ -98,7 +117,12 @@ export const ProjectsPage = () => {
             linkGitHub="https://github.com/dmitrenokdarya/2-sprint-hw"
             discription={
               <>
-                - Built an educational React-based UI component library featuring: interactive chat component, bi-directionally synchronized form controls, sortable and filterable data tables, countdown timer with controls, pagination system, live search functionality, custom validation framework, and dynamic theme switching;
+                - Built an educational React-based UI component library
+                featuring: interactive chat component, bi-directionally
+                synchronized form controls, sortable and filterable data tables,
+                countdown timer with controls, pagination system, live search
+                functionality, custom validation framework, and dynamic theme
+                switching;
                 <br />- Integrated Local Storage API, geolocation, semantic
                 markup with a11y;
                 <br />- Utilized React Hooks, Context API, custom validators.
@@ -133,6 +157,7 @@ const PProject = styled.p`
   font-weight: 400;
   letter-spacing: 0.02em;
   line-height: 238%;
+  margin-top: 15px;
 `;
 
 type ProjectWrapperProps = {
@@ -163,18 +188,10 @@ const ProjectWrapper = ({
         <StyledSkill href={linkDemo}>Demo</StyledSkill> |{" "}
         <StyledSkill href={linkGitHub}>GitHub</StyledSkill>
       </FlexWrapper>
-      <video
-        controls
-        playsInline
-        loop
-        preload="metadata"
-        autoPlay 
-        muted 
-        style={{
-        }}
-      >
+      <video controls playsInline loop preload="metadata" autoPlay muted>
         <source src={photo} type="video/mp4" />
       </video>
+      <H4Text>Key Responsibilities:</H4Text>
       <PProject>{discription}</PProject>
     </FlexWrapper>
   );
@@ -197,6 +214,14 @@ const H3Text = styled.h3`
   color: ${Theme.colors.font.placeholder};
   font-size: calc((100vw - 576px) / (1920 - 576) * (35 - 10) + 10px);
   margin: 0 auto 0 auto;
+  width: fit-content;
+`;
+
+const H4Text = styled.h4`
+  font-weight: 700;
+  color: ${Theme.colors.font.placeholder};
+  font-size: calc((100vw - 576px) / (1920 - 576) * (30 - 10) + 10px);
+  margin: 20px 0 0 0;
   width: fit-content;
 `;
 
