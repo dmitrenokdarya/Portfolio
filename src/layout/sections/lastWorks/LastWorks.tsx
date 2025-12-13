@@ -61,11 +61,12 @@ export const LastWorks = () => {
               text="react components library"
               discription="A compact library of reusable React components across three difficulty levels (Pre-junior, Junior, Junior+)."
             />
-            <Link to="/projects">
+            <Link to="/projects" style={{ display: "block", width: "100%" }}>
               <Button
                 text="view all portfolio"
                 padding="0.65em 2.12em"
-                width="17.18em"
+                width="100%"
+                margin="280px 0 0 0 "
               />
             </Link>
           </GridBlockWrapper>
@@ -104,12 +105,7 @@ const GridBlockWrapper = styled.div`
   grid-auto-rows: 13px;
   gap: 3vh;
   grid-template-rows: masonry;
-  & > *:last-child {
-    grid-column: 1 / -1;
-    justify-self: end;
-    margin-top: -9vh;
-    height: auto;
-  }
+
   @media ${Theme.media.lgScreen} {
     grid-auto-rows: 15px;
   }

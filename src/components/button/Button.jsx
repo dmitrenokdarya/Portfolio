@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { Theme } from "../../styles/Theme";
 import { Icon } from "../icon/Icon";
-import { FlexWrapper } from "../FlexWrapper";
 
 type ButtonPropsType = {
     text: string;
