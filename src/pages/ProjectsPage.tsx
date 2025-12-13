@@ -98,8 +98,7 @@ export const ProjectsPage = () => {
             linkGitHub="https://github.com/dmitrenokdarya/2-sprint-hw"
             discription={
               <>
-                - Built a component library: modal windows, forms with
-                validation, tabs, accordions;
+                - Built an educational React-based UI component library featuring: interactive chat component, bi-directionally synchronized form controls, sortable and filterable data tables, countdown timer with controls, pagination system, live search functionality, custom validation framework, and dynamic theme switching;
                 <br />- Integrated Local Storage API, geolocation, semantic
                 markup with a11y;
                 <br />- Utilized React Hooks, Context API, custom validators.

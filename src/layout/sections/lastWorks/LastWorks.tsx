@@ -37,9 +37,11 @@ export const LastWorks = () => {
                   <br />- follow other users' profiles,
                   <br />- purchase a premium subscription,
                   <br />- leave comments,
-                  <br />- like content, 
+                  <br />- like content,
                   <br />- exchange private messages.
-                  <br /><br />And much more.
+                  <br />
+                  <br />
+                  And much more.
                 </>
               }
             />
@@ -62,7 +64,6 @@ export const LastWorks = () => {
             <Link to="/projects">
               <Button
                 text="view all portfolio"
-                margin="15vw 0 0 0"
                 padding="0.65em 2.12em"
                 width="17.18em"
               />
@@ -100,9 +101,18 @@ const TitleBlock = styled.div`
 const GridBlockWrapper = styled.div`
   display: grid;
   grid-template-columns: repeat(2, minmax(250px, 1fr));
-  grid-auto-rows: 5px;
-  gap: 3vw;
+  grid-auto-rows: 13px;
+  gap: 3vh;
   grid-template-rows: masonry;
+  & > *:last-child {
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-top: -9vh;
+    height: auto;
+  }
+  @media ${Theme.media.lgScreen} {
+    grid-auto-rows: 15px;
+  }
 `;
 
 const ZText = styled.span`
