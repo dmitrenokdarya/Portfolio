@@ -83,8 +83,8 @@ const ContactModalContent = () => {
 
     const handleCVDownload = () => {
         const link = document.createElement('a');
-        link.href = process.env.PUBLIC_URL + '/Darya_Dmitrenok_CV.pdf';
-        link.download = 'Darya_Dmitrenok_CV.pdf';
+        link.href = process.env.PUBLIC_URL + '/CV_Dmitrenok_Darya.pdf';
+        link.download = 'CV_Dmitrenok_Darya.pdf';
         link.click();
     };
 
