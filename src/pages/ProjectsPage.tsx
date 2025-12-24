@@ -8,7 +8,7 @@ import { FlexWrapper } from "../components/FlexWrapper";
 export const ProjectsPage = () => {
   const Todolist = require("../assets/images/ToDoListVideo.mp4");
   const Library = require("../assets/images/LibraryVideo.mp4");
-  const MyPixelgram = require("../assets/images/MyPixelgramVideo.mp4");
+  const MyPixelgram = require("../assets/images/MyPixelGramVideo.mp4");
   return (
     <ProjectsWrapper>
       <Header />
